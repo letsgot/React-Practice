@@ -1,0 +1,68 @@
+<!-- ------------------------- Using normal plain html -------------------------------- -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">Hello World</div>
+</body>
+</html> -->
+
+<!-- --------------------------Using Javascript code------------------------ -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        let heading = document.createElement("h2");
+        heading.innerHTML = "Hello World From Javascript";
+        let root = document.getElementById("root");
+        root.appendChild(heading);
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <!-- The React library is responsible for the core functionality of building and managing the component-based structure of an application. -->
+    <!-- The ReactDOM library is responsible for rendering React components to the real DOM in the browser. It bridges the gap between React's virtual DOM and the actual DOM. -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- React: Manages the logic, components, and virtual DOM. -->
+    <!-- ReactDOM: Renders the components to the real DOM and handles updates. -->
+     <script src="./App.js"></script> 
+     <!-- this sequence of script matters firstly execute the react script then app.js will understand what React,ReactDOM variables is  -->
+
+</body>
+
+</html>
+
+
+
+<!-- The crossorigin attribute in a <script> or <link> tag is used to handle cross-origin requests in web browsers. It is particularly useful when you are loading resources (like JavaScript or CSS) from a different origin (domain) than the one your website is hosted on.
+
+    Let's break down the CDN link and the crossorigin attribute:
+    
+    1. CDN Link:
+    A CDN (Content Delivery Network) link provides access to resources hosted on a remote server that can be accessed by browsers. For example, using a CDN link for React allows you to include the React library without having to download and serve it yourself.
+    
+    2. crossorigin Attribute:
+    The crossorigin attribute controls how browsers handle cross-origin requests, which occur when your webpage requests resources from a different origin. By default, a request made to another domain is considered cross-origin. -->
